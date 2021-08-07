@@ -87,6 +87,7 @@ p {
 /* ___________________Header______________________ */
 
 .header {
+  background-color: var(--black);
   position: fixed;
   z-index: 1000;
   left: 0;
@@ -268,7 +269,53 @@ p {
   animation-delay: 2.5s;
 }
 
+.arrow {
+  position: relative;
+  margin-top: 40px;
+  color: var(--accentColor);
+  text-align: center;
+  visibility: visible;
+}
+
+.bounce {
+  -webkit-animation: pulse 1.7s infinite;
+  animation: pulse 1.7s infinite;
+}
+
+.below {
+  height: 100vh;
+}
 /* Keyframes */
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, 20px);
+    transform: translate(0, 30px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, 20px);
+    transform: translate(0, 30px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
 
 @keyframes text_reveal_box {
   50% {
@@ -296,6 +343,15 @@ p {
 /* End Keyframes */
 
 /* Media Query for Tablet */
+
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+  .arrow {
+    margin-top: 40px;
+    color: var(--accentColor);
+    text-align: center;
+    visibility: visible;
+  }
+}
 
 @media only screen and (min-width: 768px) {
   .cta {
