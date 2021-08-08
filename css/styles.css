@@ -88,6 +88,7 @@ p {
 
 .header {
   background-color: var(--black);
+  padding: 10px;
   position: fixed;
   z-index: 1000;
   left: 0;
@@ -223,6 +224,28 @@ p {
   justify-content: flex-start;
 }
 
+.wrapper {
+  width: 100%;
+}
+
+.arrow {
+  /* background-color: pink; */
+  position: absolute;
+  padding-left: 600px;
+  padding-top: 90px;
+  text-align: center;
+  visibility: visible;
+}
+
+.arrow a {
+  color: var(--accentColor);
+}
+
+.bounce {
+  -webkit-animation: pulse 1.7s infinite;
+  animation: pulse 1.7s infinite;
+}
+
 .hero h1 {
   display: block;
   width: fit-content;
@@ -269,19 +292,7 @@ p {
   animation-delay: 2.5s;
 }
 
-.arrow {
-  position: relative;
-  margin-top: 40px;
-  color: var(--accentColor);
-  text-align: center;
-  visibility: visible;
-}
-
-.bounce {
-  -webkit-animation: pulse 1.7s infinite;
-  animation: pulse 1.7s infinite;
-}
-
+/* ____________________Work_______________ */
 .below {
   height: 100vh;
 }
@@ -346,10 +357,12 @@ p {
 
 @media only screen and (min-width: 300px) and (max-width: 768px) {
   .arrow {
-    margin-top: 40px;
+    margin-top: 30px;
     color: var(--accentColor);
     text-align: center;
     visibility: visible;
+    padding-top: 190px;
+    padding-left: 140px;
   }
 }
 
@@ -357,6 +370,10 @@ p {
   .cta {
     font-size: 2.5rem;
     padding: 20px 60px;
+  }
+
+  .arrow {
+    padding-left: 335px;
   }
 
   h1.section-title {
@@ -372,11 +389,11 @@ p {
 
   @media only screen and (min-width: 1200px) {
     /* Header */
-    #header .hamburger {
+    .hamburger {
       display: none;
     }
 
-    #header .nav-list ul {
+    .nav-list ul {
       position: initial;
       display: block;
       height: auto;
@@ -384,16 +401,17 @@ p {
       background-color: transparent;
     }
 
-    #header .nav-list ul li {
+    .nav-list ul li {
       display: inline-block;
     }
 
-    #header .nav-list ul li a {
+    .nav-list ul li a {
       font-size: 1.8rem;
     }
 
-    #header .nav-list ul a::after {
-      display: none;
+    .arrow {
+      padding-top: 190px;
+      padding-left: 560px;
     }
   }
 }
