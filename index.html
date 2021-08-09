@@ -48,9 +48,9 @@
         <div class="wrapper">
           <h1>Hi, I'm Suraj <span></span></h1>
           <h1>A Web Developer. <span></span></h1>
-          <a href="#" class="cta" data-aos="zoom-up" data-aos-delay="2500">
-            Know more
-          </a>
+          <div data-aos="zoom-up" data-aos-delay="2500">
+            <a href="#" class="cta"> Know more </a>
+          </div>
           <div class="arrow bounce" data-aos="zoom-up" data-aos-delay="2500">
             <a href="/">
               <i class="bi bi-chevron-down fa-3x" aria-hidden="true"></i>
@@ -61,7 +61,140 @@
     </section>
 
     <!-- _____________________Work___________________________ -->
-    <div class="below" style="background-color: palegreen"></div>
+    <section id="work">
+      <div class="work">
+        <div data-aos="fade-right" data-aos-delay="200">
+          <h1 class="section-title left"><span>What </span> do i do?</h1>
+          <p>
+            I'm a MERN stack junior web developer, currently looking for a job
+            opportunity to use the skills I've acquired over the past years, I
+            have built a few projects and freelanced for a company. I am
+            constantly thriving to learn more and improve my skills to be an
+            even more efficient developer.
+          </p>
+          <a href="#" class="cta-resume"> Resume </a>
+        </div>
+        <div class="skills" data-aos="fade-left" data-aos-delay="300">
+          <h1 class="section-title"><span> Skills</span></h1>
+          <p>Languages: <span> Javascipt, Python.</span></p>
+          <p>Databases: <span>MongoDB, MySQL.</span></p>
+          <p>
+            Frameworks & Libraries:
+            <span> NodeJS, Express, ReactJS, Redux.</span>
+          </p>
+          <p>Others: <span> HTML, CSS, Git.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ______________________Projects______________________________ -->
+
+    <section id="projects">
+      <div class="projects container" data-aos-delay="200" data-aos="fade-up">
+        <div class="projects-header">
+          <h1 class="section-title">Featured <span>Projects</span></h1>
+        </div>
+        <div class="all-projects">
+          <div data-aos-delay="300" data-aos="zoom-up">
+            <div class="project-item">
+              <div class="project-info">
+                <h1>My Portfolio</h1>
+                <h2>
+                  <a href="https://google.com/" target="_blank">View Live</a>
+                </h2>
+                <p>
+                  This webpage itself! Built it using vanilla css, js and html
+                  to create something that every developer should have, a
+                  portfolio! Checkout the whole page, i hope you like what you
+                  see and well, enjoy your visit! <br />
+                  <a href="#"> View source code</a>
+                </p>
+              </div>
+              <div class="project-img">
+                <img src="./images/portfolio.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div data-aos-delay="300" data-aos="zoom-up">
+            <div class="project-item">
+              <div class="project-info">
+                <h1>Daily Journal</h1>
+                <h2>
+                  <a
+                    href="https://writejournaldaily.herokuapp.com/"
+                    target="_blank"
+                    >View live</a
+                  >
+                </h2>
+                <p>
+                  A minimalistic daily journal built with MongoDB to store user
+                  data, Node, Express & EJS to provide dynamic web-pages and
+                  HTML, CSS, along with bootstrap to provide a minimalist
+                  interface.
+                  <br />
+                  <a href="#"> View source code</a>
+                </p>
+              </div>
+              <div class="project-img">
+                <img src="./images/daily-journal.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div data-aos-delay="300" data-aos="fade-up">
+            <div class="project-item">
+              <div class="project-info">
+                <h1>Find Movies</h1>
+                <h2>
+                  <a
+                    href="https://search-for-moviess.netlify.app/"
+                    target="_blank"
+                    >View live</a
+                  >
+                </h2>
+                <p>
+                  Powered by TMDB, this project is made with React, the goal
+                  behind this project was to get even more familiar with using
+                  React and handling APIs whilst also achieving a decent look.
+                  <br />
+                  <a href="#"> View source code</a>
+                </p>
+              </div>
+              <div class="project-img">
+                <img src="./images/find-movies.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- _________________________About_________________________ -->
+    <section id="about">
+      <div class="about">
+        <h1 class="section-title">About <span>me.</span></h1>
+      </div>
+    </section>
+
+    <!-- ____________________________Contact_______________________ -->
+    <section id="contact">
+      <div class="contact">
+        <div class="section-title">
+          <h1 class="section-title" style="color: white">
+            Get in <span>touch</span>
+          </h1>
+          <p>Don't be a stranger <span> :)</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- __________________________Footer______________________________ -->
+    <footer>
+      <div>
+        <a href=""> <li class="fab-fa-facebook-f"></li> </a>
+        <a href=""> <li class="fab-fa-twitter"></li> </a>
+        <a href=""><li class="fab-fa-instagram"></li></a>
+      </div>
+    </footer>
     <script src="/js/main.js"></script>
     <script>
       AOS.init();
