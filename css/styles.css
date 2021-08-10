@@ -380,7 +380,6 @@ p {
   color: var(--whitest);
   border: 2px solid var(--accentColor);
   background-color: var(--accentColor);
-  box-shadow: var(--black);
 }
 
 /* _____________________________Projects_______________________ */
@@ -483,24 +482,130 @@ p {
 
 /* ___________________________About____________________ */
 
-.about {
+#about {
   height: 100vh;
-  /* background: radial-gradient(#c8d6e5, #ff9f43); */
-
-  background-color: #ff9f43;
+  /* background: #ff9f43; */
+  /* border-top: 150px solid red; */
   background-image: -webkit-linear-gradient(
-    63deg,
+    64deg,
     var(--black) 50%,
     var(--white) 50%
   );
 }
+#about .about {
+  background-color: var(--white);
+  flex-direction: column-reverse;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+
+#about .col-left {
+  width: 250px;
+  height: 360px;
+}
+
+#about .col-right {
+  width: 100%;
+}
+
+#about .col-right h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  margin-bottom: 10px;
+}
+
+#about .col-right p {
+  margin-bottom: 20px;
+  padding: 0;
+  color: #576574;
+  font-weight: 500;
+}
+
+.col-right .cta-resume {
+  margin-bottom: 30px;
+  margin-left: 0;
+  border: 2px solid var(--black);
+  color: var(--black);
+}
+
+.cta-resume:hover {
+  color: var(--whitest);
+  border: 2px solid var(--accentColor);
+  background-color: var(--accentColor);
+}
+
+#about .col-left .about-img {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border: 5px solid var(--whitest);
+}
 
 /* ____________________________Contact__________________________ */
 
-.contact {
-  height: 100vh;
-
+#contact {
   background-color: var(--black);
+  /* padding-top: 10px; */
+}
+
+.contact {
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.contact-header h1 {
+  padding-bottom: 5px;
+  color: var(--white);
+}
+
+.contact-header {
+  color: var(--white);
+  margin-bottom: 40px;
+}
+
+.contact-info {
+  /* padding: 50px; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+}
+
+.contact-info h1 {
+  padding-left: 48px;
+  padding-bottom: 25px;
+  font-size: 3.5rem;
+  text-align: left;
+}
+
+.contact-info p {
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  text-align: justify;
+  padding-right: 350px;
+}
+
+.contact-info a {
+  font-weight: bold;
+  color: var(--white);
+}
+
+.social {
+  align-items: center;
+  padding: 20px 52px;
+  font-size: 2.3rem;
+  display: flex;
+  list-style: none;
+}
+
+.social:hover {
+  color: var(--accentColor);
 }
 
 /* _____________________________Foooter__________________________ */
@@ -588,6 +693,7 @@ footer a {
 
   /* ___________________Projects__________________ */
   .project-info p {
+    padding: 0;
     text-align: center;
     color: var(--whitest);
   }
@@ -639,6 +745,33 @@ footer a {
 
   .all-projects .project-img {
     height: 100%;
+  }
+
+  /* _________________About_______________ */
+
+  #about .about {
+    flex-direction: row;
+  }
+
+  #about .col-left {
+    width: 600px;
+    height: 400px;
+    padding-left: 60px;
+  }
+
+  #about .col-right {
+    text-align: left;
+    justify-content: left;
+    padding: 30px;
+  }
+
+  #about .col-right h1 {
+    text-align: left;
+  }
+
+  #about .col-right p {
+    text-align: left;
+    padding: 0;
   }
 
   /* Media Query for Desktop */
