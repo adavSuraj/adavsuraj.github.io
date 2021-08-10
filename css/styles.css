@@ -604,7 +604,7 @@ p {
   list-style: none;
 }
 
-.social:hover {
+.contact-info a:hover {
   color: var(--accentColor);
 }
 
