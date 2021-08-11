@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 :root {
   --accentColor: #1dd1a1;
   /* --accentColor: #04ca83; */
@@ -492,7 +492,7 @@ p {
     var(--white) 50%
   );
 }
-#about .about {
+.about {
   background-color: var(--white);
   flex-direction: column-reverse;
   text-align: center;
@@ -501,23 +501,23 @@ p {
   padding: 100px 20px;
 }
 
-#about .col-left {
+.col-left {
   width: 250px;
   height: 360px;
 }
 
-#about .col-right {
+.col-right {
   width: 100%;
 }
 
-#about .col-right h2 {
+.col-right h2 {
   font-size: 2rem;
   font-weight: 500;
   letter-spacing: 0.2rem;
   margin-bottom: 10px;
 }
 
-#about .col-right p {
+.col-right p {
   margin-bottom: 20px;
   padding: 0;
   color: #576574;
@@ -537,8 +537,8 @@ p {
   background-color: var(--accentColor);
 }
 
-#about .col-left .about-img {
-  height: 100%;
+.col-left .about-img {
+  height: 122%;
   width: 100%;
   position: relative;
   border: 5px solid var(--whitest);
@@ -555,7 +555,7 @@ p {
   flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
 }
 
 .contact-header h1 {
@@ -596,6 +596,10 @@ p {
   color: var(--white);
 }
 
+.contact-info a:hover {
+  color: var(--accentColor);
+}
+
 .social {
   align-items: center;
   padding: 20px 52px;
@@ -604,12 +608,15 @@ p {
   list-style: none;
 }
 
-.contact-info a:hover {
-  color: var(--accentColor);
-}
+/* .greeting {
+  padding-left: 100px;
+  text-align: center;
+  align-items: center;
+} */
 
 /* _____________________________Foooter__________________________ */
 footer {
+  background-color: var(--black);
   text-align: center;
 }
 
@@ -753,23 +760,23 @@ footer a {
     flex-direction: row;
   }
 
-  #about .col-left {
+  .col-left {
     width: 600px;
     height: 400px;
     padding-left: 60px;
   }
 
-  #about .col-right {
+  .col-right {
     text-align: left;
     justify-content: left;
     padding: 30px;
   }
 
-  #about .col-right h1 {
+  .col-right h1 {
     text-align: left;
   }
 
-  #about .col-right p {
+  .col-right p {
     text-align: left;
     padding: 0;
   }
