@@ -547,9 +547,12 @@ footer {
   text-align: center;
 }
 
-footer p {
-  margin-top: 1px;
-}
+/* footer p {
+  font-weight: 400;
+  margin-top: 0px;
+  padding-bottom: 5px;
+  font-size: 1.1rem;
+} */
 
 footer a {
   display: inline-block;
@@ -728,6 +731,14 @@ footer a {
   color: var(--whitest);
   border: 2px solid var(--accentColor);
   background-color: var(--accentColor);
+}
+
+footer p {
+  font-weight: 400;
+  margin-top: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 1.1rem;
 }
 
 /* _______________Contact________________ */
@@ -961,6 +972,13 @@ footer a {
     padding-bottom: 0;
   }
 
+  footer p {
+    font-weight: 400;
+    margin-top: 0px;
+    padding-bottom: 5px;
+    font-size: 1.6rem;
+  }
+
   /* Media Query for Desktop */
 
   @media only screen and (min-width: 1200px) {
@@ -1137,6 +1155,13 @@ footer a {
       list-style: none;
       margin-bottom: 0;
       padding-bottom: 0;
+    }
+
+    footer p {
+      font-weight: 400;
+      margin-top: 0px;
+      padding-bottom: 5px;
+      font-size: 1.6rem;
     }
   }
 }
